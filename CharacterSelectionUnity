@@ -1,6 +1,13 @@
+//https://www.youtube.com/watch?v=IFTjcPvCZaM
+
+using UnityEngine.SceneManagement;
+
 public class CharacterSelection {
 
 private GameObject[] characterList;
+
+private int index;
+
 
 private void Start()
 {
@@ -39,5 +46,9 @@ index = 0;
 
 characterList[index].SetActive(true);
 
+}
+
+public void ConfirmButton(){
+SceneManager.LoadScene("");
 }
 }
