@@ -49,6 +49,6 @@ characterList[index].SetActive(true);
 }
 
 public void ConfirmButton(){
-SceneManager.LoadScene("");
+SceneManager.LoadScene("Main");
 }
 }
