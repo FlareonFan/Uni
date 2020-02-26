@@ -1,0 +1,50 @@
+public int charSpeed;
+public Animator anim;
+
+public void Start{
+anim = GetComponent<"Animator"> ();
+}
+
+public void Update(){
+if(Input.GetKey("Keycode.A")) //if the 'A' key is pressed
+{
+transform.translate(0, 0, 0); //player moves along the X axis to the left
+anim.SetTrigger(""); //animation plays
+}
+
+if(Input.GetKey("Keycode.D")) //if the 'D' key is pressed
+{
+transform.translater(0, 0, 0); //player moves along the X axis to the right
+anim.SetTrigger(""); //animation plays
+}
+
+if(Input.GetKey("Keycode.W")) //if the 'W' key is pressed
+{
+transform.translate(0, 0, 0); //player moves along the Y axis
+anim.SetTrigger("");
+}
+
+if(Input.GetKey("Keycode.S")) //if the 'S' key is pressed
+{
+transform.translate(0, 0, 0); //player moves along the Y axis
+anim.SetTrigger("");
+}
+
+if(Input.GetKeyUp("Keycode.A")) //if the 'A' key is released
+{
+transform.translater(0, 0, 0); //stops players movement
+anim.SetTrigger("idle") //returns the player back to idle animation
+}
+
+if(Input.GetKeyUp("Keycode.D")) //if the 'D' key is released
+{
+
+}
+
+if(Input.GetKeyUp("Keycode.S")) //if the 'S' key is released
+{
+}
+
+if(Input.GetKeyUp("Keycode.W")) //if the 'W' key is released
+{
+}
